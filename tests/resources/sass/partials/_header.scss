@@ -1,0 +1,50 @@
+@import "./variables.scss";
+
+a{
+    text-decoration: none;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    .logo_box{
+      
+      padding: 20px 0;
+      img{
+        height: 100%;
+      }
+    }
+    ul{
+      display: flex;
+      align-items: center;
+
+      li{
+        list-style: none;
+        height: 50%;
+        margin: 0 15px;
+        display: flex;
+        align-items: center;
+          border-bottom: 10px solid transparent;
+          border-top: 10px solid transparent;
+          &.active{
+            border-bottom: 10px solid $primaryColor;
+            color: $primaryColor;
+            transition: 0.3s;
+          }
+        &:hover{
+          border-bottom: 10px solid $primaryColor;
+          color: $primaryColor;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+        &:hover a{
+          color: $primaryColor;
+          transition: 0.3s;
+        }
+        a{
+          color: $secondaryColor;
+          font-weight: bold;
+        }
+      }
+    }
+    }

@@ -1,0 +1,162 @@
+.main_comic-details{
+
+    .blue_band{
+    height: 50px;
+    background-color: #0182F9;
+    }
+    
+    .comic-details__top{
+        background-color: white;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+
+        a{
+            position: absolute;
+            top: -21rem;
+
+            div{
+                background-color: white;
+                width: 192px;
+                height: 291px;
+                border: 2px solid white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .bottom_text,  .top_text{
+
+                    height: min-content;
+                    color: white;
+                    background-color: #3b99ef;
+                    text-transform: uppercase;
+                }
+
+                .bottom_text{
+                    text-align: center;
+                }
+                
+                .top_text{
+                    width: min-content;
+                    white-space: nowrap;
+                    padding: 1px;
+                }
+            }
+        }
+        .container_comic-details__top{
+            position: relative;
+            h1{
+                text-transform: uppercase;
+            }
+            .price-box{
+                display: flex;
+                background-color: #55ba59;
+                padding: 0.6rem;
+                margin: 1rem 0;
+                font-size: 0.7rem;
+                
+                .price-box__left{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-basis: 80%;
+                    padding-right: 1rem;
+                    align-items: center;
+                    color: white;
+                }
+                .price-box__right{
+                    padding-left: 1rem;
+                    flex-basis: 20%;
+                    text-align: center;
+                    border-left: 1px solid black;
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+                    justify-content: center;
+                    color: white;
+                }
+            }
+            .text-box{
+                max-width: 600px;
+                font-size: 0.9rem;
+                line-height: 1.2rem;
+            }
+        }
+        .adv_container{
+            padding-left: 2rem;
+            p{
+                text-align: right;
+            }
+        }
+    }
+    .comic-details__bottom{
+
+        background-color: rgb(233, 233, 233);
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+            .container_comic-details__bottom__left, .container_comic-details__bottom__right{
+                flex-basis: 50%;
+                .row{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    border-bottom: 1px solid rgba(180, 180, 180, 0.7);
+                    h4{
+                        white-space: nowrap;
+                        font-weight: lighter;
+                        font-size: 0.8rem;
+                    }
+                    div{
+                        flex-basis: 50%;
+                        a{
+                            font-size: 0.8rem;
+                            color: $primaryColor;
+                        }
+                        span{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .row_2,.row_3,.row_4{
+                    padding: 0.3rem 1rem;
+                }
+
+            }
+            .container_comic-details__bottom__left{
+                padding-left: 12rem;
+            }
+            .container_comic-details__bottom__right{
+                padding-right: 12rem;
+                padding-left: 2rem;
+            }
+            .container_comic-details__bottom_bottom{
+                padding: 0 12rem;
+                flex-basis: 100%;
+                display: flex;
+                margin-top: 5rem;
+                border: 1px solid rgba(180, 180, 180, 0.7);
+
+                .col{
+                    padding: 1rem;
+                    flex-basis: 25%;
+                    display: flex;
+                    justify-content: space-between;
+                    border-right: 1px solid rgba(180, 180, 180, 0.7);
+                    h5{
+                        color: rgba(136, 136, 136, 0.788);
+                    }
+                    img{
+                        height: 40px;
+                        color: rgba(136, 136, 136, 0.788);
+                        filter: brightness(0.55);
+                    }
+                }
+                .col-1{
+                    border-left: 1px solid rgba(180, 180, 180, 0.7);
+
+                }
+            }
+    }
+
+
+}

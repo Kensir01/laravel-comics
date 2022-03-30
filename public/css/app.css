@@ -1,0 +1,455 @@
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+
+header .logo_box {
+  padding: 20px 0;
+}
+
+header .logo_box img {
+  height: 100%;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  height: 50%;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+}
+
+header ul li.active {
+  border-bottom: 10px solid #3880f1;
+  color: #3880f1;
+  transition: 0.3s;
+}
+
+header ul li:hover {
+  border-bottom: 10px solid #3880f1;
+  color: #3880f1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+header ul li:hover a {
+  color: #3880f1;
+  transition: 0.3s;
+}
+
+header ul li a {
+  color: #1d1d1c;
+  font-weight: bold;
+}
+
+.footer_top {
+  background-image: url("/img/footer-bg.jpg");
+  margin: auto;
+  padding: 50px 15%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer_top a {
+  color: #767F85;
+}
+
+.footer_top a:hover {
+  text-decoration: underline;
+}
+
+.footer_top .list_container_sx {
+  width: 50%;
+  display: flex;
+  overflow: hidden;
+}
+
+.footer_top .list_container_sx ul {
+  margin: 0 10px;
+}
+
+.footer_top .list_container_sx ul h3 {
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.footer_top .list_container_sx ul li {
+  margin-bottom: 10px;
+}
+
+.footer_top .list_container_dx img {
+  position: absolute;
+  top: -100px;
+  right: 100px;
+}
+
+.footer_bottom {
+  background-color: #1d1d1c;
+  padding: 20px 15%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer_bottom a {
+  text-decoration: none;
+}
+
+.footer_bottom li {
+  list-style: none;
+}
+
+.footer_bottom .footer_sx {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #3880f1;
+}
+
+.footer_bottom .footer_sx:hover {
+  border-color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.footer_bottom .footer_sx:hover .cta {
+  transition: 0.4s;
+  color: #3880f1;
+}
+
+.footer_bottom .footer_sx .cta {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.footer_bottom .footer_dx {
+  display: flex;
+  align-items: center;
+}
+
+.footer_bottom .footer_dx h3 {
+  margin-right: 15px;
+  color: #3880f1;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.footer_bottom .footer_dx .icon_box {
+  margin-right: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main_home {
+  background-color: #1d1d1c;
+  padding-bottom: 20px;
+}
+
+.main_home .container {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main_home .container .load_more.top {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.main_home .container h1 {
+  color: white;
+}
+
+.main_home .load_more {
+  color: white;
+  background-color: #3880f1;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 10px 30px;
+}
+
+.main_home .nav {
+  display: flex;
+  background-color: #3880f1;
+  padding: 2rem 12rem;
+  justify-content: space-around;
+}
+
+.main_home .nav li {
+  display: flex;
+  align-items: center;
+  flex-basis: 15%;
+  justify-content: space-evenly;
+}
+
+.main_home .nav li a {
+  color: white;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.main_home .nav li img {
+  height: 60px;
+  padding-right: 10px;
+}
+
+.main_home .nav li #power-visa {
+  height: 50px;
+}
+
+.card_box {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.card_box .card_title {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.card_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 20px;
+}
+
+.main_comic-details .blue_band {
+  height: 50px;
+  background-color: #0182F9;
+}
+
+.main_comic-details .comic-details__top {
+  background-color: white;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.main_comic-details .comic-details__top a {
+  position: absolute;
+  top: -21rem;
+}
+
+.main_comic-details .comic-details__top a div {
+  background-color: white;
+  width: 192px;
+  height: 291px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_comic-details .comic-details__top a div .bottom_text,
+.main_comic-details .comic-details__top a div .top_text {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  color: white;
+  background-color: #3b99ef;
+  text-transform: uppercase;
+}
+
+.main_comic-details .comic-details__top a div .bottom_text {
+  text-align: center;
+}
+
+.main_comic-details .comic-details__top a div .top_text {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  padding: 1px;
+}
+
+.main_comic-details .comic-details__top .container_comic-details__top {
+  position: relative;
+}
+
+.main_comic-details .comic-details__top .container_comic-details__top h1 {
+  text-transform: uppercase;
+}
+
+.main_comic-details .comic-details__top .container_comic-details__top .price-box {
+  display: flex;
+  background-color: #55ba59;
+  padding: 0.6rem;
+  margin: 1rem 0;
+  font-size: 0.7rem;
+}
+
+.main_comic-details .comic-details__top .container_comic-details__top .price-box .price-box__left {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 80%;
+  padding-right: 1rem;
+  align-items: center;
+  color: white;
+}
+
+.main_comic-details .comic-details__top .container_comic-details__top .price-box .price-box__right {
+  padding-left: 1rem;
+  flex-basis: 20%;
+  text-align: center;
+  border-left: 1px solid black;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+  color: white;
+}
+
+.main_comic-details .comic-details__top .container_comic-details__top .text-box {
+  max-width: 600px;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.main_comic-details .comic-details__top .adv_container {
+  padding-left: 2rem;
+}
+
+.main_comic-details .comic-details__top .adv_container p {
+  text-align: right;
+}
+
+.main_comic-details .comic-details__bottom {
+  background-color: #e9e9e9;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right {
+  flex-basis: 50%;
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left .row,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(180, 180, 180, 0.7);
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left .row h4,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right .row h4 {
+  white-space: nowrap;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left .row div,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right .row div {
+  flex-basis: 50%;
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left .row div a,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right .row div a {
+  font-size: 0.8rem;
+  color: #3880f1;
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left .row div span,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right .row div span {
+  font-size: 0.8rem;
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left .row_2,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left .row_3,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left .row_4,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right .row_2,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right .row_3,
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right .row_4 {
+  padding: 0.3rem 1rem;
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__left {
+  padding-left: 12rem;
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom__right {
+  padding-right: 12rem;
+  padding-left: 2rem;
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom_bottom {
+  padding: 0 12rem;
+  flex-basis: 100%;
+  display: flex;
+  margin-top: 5rem;
+  border: 1px solid rgba(180, 180, 180, 0.7);
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom_bottom .col {
+  padding: 1rem;
+  flex-basis: 25%;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid rgba(180, 180, 180, 0.7);
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom_bottom .col h5 {
+  color: rgba(136, 136, 136, 0.788);
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom_bottom .col img {
+  height: 40px;
+  color: rgba(136, 136, 136, 0.788);
+  filter: brightness(0.55);
+}
+
+.main_comic-details .comic-details__bottom .container_comic-details__bottom_bottom .col-1 {
+  border-left: 1px solid rgba(180, 180, 180, 0.7);
+}
+
+#jumbotron {
+  height: 500px;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
